@@ -32,27 +32,27 @@ export default class CardsList extends Component {
   render() {
     return (
       <>
-      <div className="container">
-        {this.props.data.map((el) => {
-          return this.state[el.idCategory].isShown ? (
-            <Card
-              key={el.idCategory}
-              id={el.idCategory}
-              category={el.strCategory}
-              handleClose={this.handleClose}
-              handleUnmount={this.handleUnmount}
-            ></Card>
-          ) : (
-            <div key={el.idCategory} className="card">
-              <button onClick={() => this.handleShow(el.idCategory)}>
-                Show
-              </button>
-            </div>
-          );
-        })}
-        <button onClick={this.handleReport} id="reportBtn">
-          {!this.state.report ? 'Report' : 'Hide'}
-        </button>
+        <div className="container">
+          {this.props.data.map((el) => {
+            return this.state[el.idCategory].isShown ? (
+              <Card
+                key={el.idCategory}
+                id={el.idCategory}
+                category={el.strCategory}
+                handleClose={this.handleClose}
+                handleUnmount={this.handleUnmount}
+              ></Card>
+            ) : (
+              <div key={el.idCategory} className="card">
+                <button onClick={() => this.handleShow(el.idCategory)}>
+                  Show
+                </button>
+              </div>
+            );
+          })}
+          <button onClick={this.handleReport} id="reportBtn">
+            {!this.state.report ? "Report" : "Hide"}
+          </button>
         </div>
         <div className="report">
           {this.state.report
@@ -66,7 +66,7 @@ export default class CardsList extends Component {
               })
             : ""}
         </div>
-        </>
+      </>
     );
   }
 }

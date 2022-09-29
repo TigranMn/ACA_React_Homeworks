@@ -1,1 +1,11 @@
-[{"id":1,"name": "Armenia"},{"id":2,"name": "Russia"},{"id":3,"name": "USA"},{"id":5,"name": "Japan"},{"id":6,"name": "Germany"},{"id":7,"name": "Switzerland"},{"id":8,"name": "Finland"},{"id":9,"name": "Romania"},{"id":10,"name": "Mavritania"}]
+[
+  { "id": 1, "name": "Armenia" },
+  { "id": 2, "name": "Russia" },
+  { "id": 3, "name": "USA" },
+  { "id": 5, "name": "Japan" },
+  { "id": 6, "name": "Germany" },
+  { "id": 7, "name": "Switzerland" },
+  { "id": 8, "name": "Finland" },
+  { "id": 9, "name": "Romania" },
+  { "id": 10, "name": "Mavritania" }
+]
